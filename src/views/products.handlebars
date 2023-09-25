@@ -3,43 +3,43 @@
         <div>
                 <ul class="nav nav-tabs justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" aria-current="page" href="#">Todos</a>
+                        <a class="nav-link active text-dark " aria-current="page" href="#">Todos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Regular</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Regular</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Vegano</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Vegano</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Junior</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Junior</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Big Ligas</a>
+                        <a class="nav-link text-white " href="#"><p class="p">Big Ligas</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Acompañantes</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Acompañantes</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Bebidas</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Bebidas</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white bg-danger" href="#">Alcohol</a>
+                        <a class="nav-link text-white  " href="#"><p class="p">Alcohol</p></a>
                     </li>
                     
                 </ul>
         </div>
         {{#each products.payload}}
-            <div class="col-md-4 bg-white pt-5 pb-5 ">
+            <div class="col-md-4 bg-white pt-2 pb-2 shadow p-3 mb-5 bg-body-tertiary">
                 <div class="card border-0 mb-4">
                     
                     <div class="card-body text-center ">
                         <a href="/products/{{this._id}}" class="text-decoration-none">
-                        <img src="{{this.thumbnails}}" class="img-fluid" alt="{{this.title}}">
+                            <img src="{{this.thumbnails}}" class="img-fluid" alt="{{this.title}}">
                         </a>
                         <div>{{this.title}}</div>
                         <p>${{this.price}}</p>
-                        <p><button class="btn btn-danger" onclick="agregarProductoAlCarrito('{{product._id}}')">Agregar </button></p>
+                        <p><button class="boton" onclick="agregarProductoAlCarrito('{{product._id}}')"><p class="p">Agregar </p></button></p>
                     </div>
                 </div>
             </div>

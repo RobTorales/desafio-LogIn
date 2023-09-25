@@ -6,8 +6,9 @@
                     <tr>
                         <td><img src="{{this.product.thumbnails}}" alt="{{this.product.title}}" width="48"></td>
                         <td class="align-middle">{{this.product.title}}</td>
+                        <td class="align-middle">{{this.product.description}}</td>
                         <td class="align-middle">${{this.product.price}}</td>
-                        <td class="afdslign-middle text-end"><button class="btn btn-danger" onclick="eliminarProducto('{{product.product._id}}')">Eliminar </button></td>
+                        <button class="boton" onclick="eliminarProducto('{{product.product._id}}')"><p class="p">Eliminar </p></button>
                     </tr>
                 {{/each}}
             </table>
